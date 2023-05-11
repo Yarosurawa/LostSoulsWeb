@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
 body {
     background-color: #111;
     margin: 0;
+    overflow: hidden;
 }
 
 .BodyContainer {
@@ -93,4 +96,164 @@ body {
 @keyframes bg4Anim {
     0%{background-position: 0 0;}
     100%{background-position: 200px 200px;}
+}
+
+.mainRulebook {
+    box-shadow: 0 0 20px 3px #111a;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-family: 'Dancing Script', cursive;
+    transition: transform 2s ease;
+    width: 445px;
+    height: 655px;
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.page {
+    font-size: 40px;
+    padding: 30px;
+    transition: transform 0.9s ease;
+    top: 2.5px;
+    transform-origin:0 100%;
+    border-radius: 10px;
+    height: 610px;
+    width: 410px;
+    background: url("https://wallpaperaccess.com/full/4868950.jpg");
+    position: absolute;
+}
+
+.titlepage {
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(20px);
+    width: 415px;
+    height: 615px;
+    background: url(./img/bookCover.png) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.titlepageBehind {
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateZ(19.9px);
+    width: 415px;
+    height: 615px;
+    background: url(./img/bookCover.png) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.page1 {
+    transform: translateZ(18px);
+}
+
+.page2 {
+    transform: translateZ(17.9px);
+}
+
+.page3 {
+    transform: translateZ(17px);
+}
+
+.page4 {
+    transform: translateZ(16.9px);
+}
+
+.page5 {
+    transform: translateZ(16px);
+}
+
+.page6 {
+    transform: translateZ(15.9px);
+}
+
+.page7 {
+    transform: translateZ(15px);
+}
+
+.page8 {
+    transform: translateZ(14.9px);
+}
+
+.page9 {
+    transform: translateZ(14px);
+}
+
+.page10 {
+    transform: translateZ(13.9px);
+}
+
+.page11 {
+    transform: translateZ(13px);
+}
+
+.page12 {
+    transform: translateZ(12.9px);
+}
+
+.page13 {
+    transform: translateZ(12px);
+}
+
+.page14 {
+    transform: translateZ(11.9px);
+}
+
+.backpageBehind {
+    left: 0;
+    top: 0;
+    transform: translateZ(11px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 415px;
+    height: 615px;
+    background: url(./img/bookCover.png) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.backpage {
+    left: 0;
+    top: 0;
+    transform: translateZ(10.9px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 415px;
+    height: 615px;
+    background: url(./img/bookCover.png) no-repeat center center fixed;
+    background-size:cover;
+}
+
+.bookTitle {
+    color: #e4d584;
+    text-shadow: 0 0 10px #948843;
+    width: 220px;
+    font-size: 60px;
+}
+
+.bookAuthor {
+    margin-top: 125px;
+    color: #e4d584;
+    text-shadow: 0 0 10px #948843;
+    width: 220px;
+    font-size: 20px;
+}
+
+.lefty .pageContent {
+    transform: rotate3d(0, 1, 0, 180deg);
 }
