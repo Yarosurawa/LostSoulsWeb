@@ -33,3 +33,62 @@ body {
     cursor: pointer;
     box-shadow: 0 0 0 5px #0002 ,0 0 0 10px #0002 , 0 0 0 15px #0002;
 }
+
+.bgs {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg1 {
+    opacity: 0.1;
+    background: url(./img/bg/bg1.png);
+    animation: bg1Anim 3s infinite linear;
+}
+
+.bg2 {
+    opacity: 0.02;
+    background: url(./img/bg/bg2.png);
+    animation: bg2Anim 2s infinite linear;
+}
+
+.bg3 {
+    opacity: 0.01;
+    background: url(./img/bg/bg3.png);
+    animation: bg3Anim 10s infinite linear;
+}
+
+.bg4 {
+    opacity: 0.02;
+    background: url(./img/bg/bg4.png);
+    animation: bg4Anim 3s infinite linear;
+}
+
+.bg {
+    z-index: -1;
+    position: absolute;
+    background-size: 200px 200px;
+    background-position: 0 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+@keyframes bg1Anim {
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 400px;}
+}
+
+@keyframes bg2Anim {
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 200px;}
+}
+
+@keyframes bg3Anim {
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 800px;}
+}
+
+@keyframes bg4Anim {
+    0%{background-position: 0 0;}
+    100%{background-position: 200px 200px;}
+}
