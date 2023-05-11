@@ -30,5 +30,6 @@ body {
     border: 1px solid #050505;
     background-color: #020202;
     color: white;
+    cursor: pointer;
     box-shadow: 0 0 0 5px #0002 ,0 0 0 10px #0002 , 0 0 0 15px #0002;
 }
